@@ -1,5 +1,6 @@
 Funcionalidades Principais
-Buscar e Exibir Todos os Deputados
+
+Buscar e Exibir Todos os Deputados:
 
 A aplicação faz uma requisição à API da Câmara dos Deputados para obter a lista de todos os deputados e exibi-los na interface.
 Arquivo: script.js
