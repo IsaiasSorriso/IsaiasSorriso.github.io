@@ -2,9 +2,12 @@ Funcionalidades Principais
 
 Buscar e Exibir Todos os Deputados:
 
-A aplicação faz uma requisição à API da Câmara dos Deputados para obter a lista de todos os deputados e exibi-los na interface.
-Arquivo: script.js
-Funções: fetchDeputados(), displayDeputados(deputados)
+  A aplicação faz uma requisição à API da Câmara dos Deputados para obter a lista de todos os deputados e exibi-los na interface.
+![image](https://github.com/IsaiasSorriso/IsaiasSorriso.github.io/assets/149633447/b0918787-8085-442b-ba41-f64c62668017)
+![image](https://github.com/IsaiasSorriso/IsaiasSorriso.github.io/assets/149633447/480b387f-b2e1-4ff4-bb85-e62d2a475783)
+
+
+
 Buscar Detalhes de um Deputado
 
 Ao clicar em um deputado na lista, a aplicação faz uma requisição à API para obter detalhes específicos do deputado selecionado.
