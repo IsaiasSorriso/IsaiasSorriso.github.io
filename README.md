@@ -8,88 +8,42 @@ Buscar e Exibir Todos os Deputados:
 
 
 
-Buscar Detalhes de um Deputado
+Buscar e Exibir Detalhes de um Deputado
 
-Ao clicar em um deputado na lista, a aplicação faz uma requisição à API para obter detalhes específicos do deputado selecionado.
-Arquivo: script.js
-Funções: fetchDeputadoDetalhes(deputadoId), displayDeputadoDetalhes(deputado)
-Buscar Endereço a partir de um CEP
+    Ao clicar em um deputado na lista, a aplicação faz uma requisição à API para obter detalhes específicos do deputado selecionado.
+![image](https://github.com/IsaiasSorriso/IsaiasSorriso.github.io/assets/149633447/0469b76f-de6a-41c8-9299-d24aa40153fc)
+![image](https://github.com/IsaiasSorriso/IsaiasSorriso.github.io/assets/149633447/ed4b7fad-b074-49d6-8d1d-5fa5108949e1)
 
-O usuário pode inserir um CEP, e a aplicação fará uma requisição à API ViaCEP para obter o endereço correspondente e suas coordenadas geográficas.
-Arquivo: script.js
-Funções: fetchCoordinates(address)
-Exibir e Salvar Detalhes do Deputado e Endereço
 
-Exibir os detalhes do deputado, endereço e coordenadas na interface e permitir que o usuário salve essas informações.
-Arquivo: script.js
-Funções: createMap(lat, lon)
+
+
+Buscar e Exibir o Endereço, Coordenadas e o Mapa a partir de um CEP, 
+
+    O usuário pode inserir um CEP, e a aplicação fará uma requisição à API ViaCEP para obter o endereço correspondente e suas coordenadas geográficas.
+![image](https://github.com/IsaiasSorriso/IsaiasSorriso.github.io/assets/149633447/79634977-ad4b-4ede-8ba5-74cbd7fcbfaa)
+
+
+    
+Criar Mapa
+    Depois que as coordenadas forem carregadas, a função criara um mapa usando as coordenadas.
+![image](https://github.com/IsaiasSorriso/IsaiasSorriso.github.io/assets/149633447/3e08d81a-ee05-4270-907b-2c65ddec2779)
+
+
+
+Salvar Detalhes do Deputado e Endereço
+
+    Exibir os detalhes do deputado, endereço e coordenadas na interface e permitir que o usuário salve essas informações.
+![image](https://github.com/IsaiasSorriso/IsaiasSorriso.github.io/assets/149633447/da541a1e-0c18-4a6a-8348-f099218d576e)
+
+
+
 Filtro de Busca
 
-Permite aos usuários filtrar a lista de deputados por nome ou partido.
-Arquivo: script.js
-Funções: search-bar.addEventListener('input', ...)
-Estrutura do Código
-HTML (index.html)
-Contém a estrutura básica da página, incluindo:
-Campo de pesquisa (search-bar)
-Lista de deputados (deputados-list)
-Seção de detalhes do deputado (deputado-detalhes)
-Formulário de CEP (cep-form)
-CSS (style.css)
-Define o estilo da página, incluindo layout, cores, e responsividade.
-JavaScript (script.js)
-Contém as principais funções que controlam a lógica da aplicação:
-fetchDeputados()
+    Permite aos usuários filtrar a lista de deputados por nome ou partido.
+![image](https://github.com/IsaiasSorriso/IsaiasSorriso.github.io/assets/149633447/e3044da0-465a-4a77-b8bd-693d33243b4f)
 
-Faz uma requisição à API da Câmara dos Deputados para obter todos os deputados.
-Armazena os dados na variável deputadosPesqueisa e exibe os deputados na interface através da função displayDeputados.
-displayDeputados(deputados)
 
-Exibe a lista de deputados na interface.
-Cada deputado é mostrado com nome, foto e partido.
-fetchDeputadoDetalhes(deputadoId)
+Fechar Tela que Exibe os Detalhes do Candidatos, Cep, Latitude e Longitude e o Mapa
+![image](https://github.com/IsaiasSorriso/IsaiasSorriso.github.io/assets/149633447/b13799f6-709c-4c31-8f58-b594397a1941)
 
-Faz uma requisição à API para obter os detalhes do deputado selecionado.
-Chama a função displayDeputadoDetalhes para exibir os detalhes na interface.
-displayDeputadoDetalhes(deputado)
 
-Exibe os detalhes do deputado na interface.
-Inclui nome, sexo, partido, email e foto.
-fetchCoordinates(address)
-
-Faz uma requisição à API do Nominatim para obter as coordenadas geográficas do endereço fornecido.
-Retorna as coordenadas (latitude e longitude).
-createMap(lat, lon)
-
-Cria e exibe um mapa com as coordenadas fornecidas usando a biblioteca Leaflet.
-Event Listeners
-
-search-bar: Filtra a lista de deputados conforme o usuário digita na barra de pesquisa.
-cep-form: Busca o endereço correspondente ao CEP inserido e exibe as informações.
-salvar: Envia os dados coletados para um servidor usando uma requisição POST.
-fechar_dados_reais: Fecha a seção de detalhes do deputado e limpa os campos de CEP e mapa.
-Como Usar a Aplicação
-Visualizar Deputados
-
-Acesse a página inicial para ver a lista de deputados.
-Use a barra de pesquisa para filtrar a lista por nome ou partido.
-Ver Detalhes do Deputado
-
-Clique em um deputado na lista para ver seus detalhes.
-Buscar Endereço por CEP
-
-Insira um CEP no campo de CEP e clique em "Buscar".
-Veja o endereço e as coordenadas correspondentes.
-Salvar Informações
-
-Após preencher os campos necessários, clique no botão "Salvar" para enviar os dados ao servidor.
-Fechar Detalhes
-
-Clique no botão "X" para fechar a seção de detalhes do deputado.
-Tecnologias Utilizadas
-HTML5
-CSS3
-JavaScript
-APIs REST (Câmara dos Deputados, ViaCEP, Nominatim)
-Biblioteca Leaflet (para mapas)
-SweetAlert2 (para alertas bonitos)
