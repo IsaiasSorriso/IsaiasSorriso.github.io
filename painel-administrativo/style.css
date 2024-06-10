@@ -70,9 +70,7 @@
     font-weight: 700;
     color: #000000; 
 }
-.caixa #link{
-    border-bottom: #000000 1px solid;
-}
+
 .caixa i{
     text-align: end;
 }
@@ -89,8 +87,28 @@
 
 }
 
-@media only screen and (max-width:520px){
-    
+@media only screen and (max-width:530px){
+    .lado{
+        font-size: 0.7rem;
+        right: 100px;
+    }
+
+    .cabecalho .logo{
+        font-size: 0.7rem;
+        margin-right: 1%;
+    }
 }
 
+@media only screen and (max-width:530px){
+    .topo{
+        margin-top: 20px;
+    }
+    
+    .caixa{
+        width: 70vw; 
+    }
 
+    .caixa a{
+        font-weight: 600;
+    }
+}
