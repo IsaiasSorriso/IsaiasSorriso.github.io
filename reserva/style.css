@@ -1,0 +1,376 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:#ECF0FB;
+    width: 100%;
+    height: 12vh;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:1000;
+}
+
+
+.perfil_foto{
+    background-color: rgb(26, 34, 34);
+    width: 50px;
+    height: 50px;
+    border: solid .5px grey;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    margin-right: 50px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 20%;
+    height: 8vh;
+    margin-left: 50px;
+}
+.logo h1{
+    position: relative;
+    font-size: 1.5rem;
+}
+.logo img{
+    width: 40px;
+    margin-top: 10px;
+}
+
+.filtros{
+    background-color: #B28FE9;
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    margin-top: 0%;
+    overflow-y: scroll;
+}
+.filtros h1{
+    color: #ffff;
+    font-size: 1.5rem;
+}
+.filtros .salas{
+    max-height: 25vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: block;
+    align-items: self-start;
+}
+
+.filtros .salas, .dias_semanas, .periodos{
+    background-color: #ECF0FB;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+}
+
+.filtros .salas .sala_check, .dias_check, .periodos_check{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    align-items: center;
+    
+}
+.sala_check{
+    margin-bottom:-20px ;
+   
+}
+.dias_check{
+    position: relative;
+    right: 20px;
+    width: 150px;
+    margin-bottom:-20px ;
+    left: 5px;
+    bottom: 10px;
+}
+.periodos_check{
+    width: 150%;
+    position: relative;
+    right: 30px;
+    margin-bottom: -20px ;
+    margin-top: -18px;
+}
+
+.filtros .salas .sala_check input[type="checkbox"], .dias_check input[type="checkbox"], .periodos_check input[type="checkbox"]{
+    width: 15px;
+    border: #ECF0FB;
+    border-radius: 10px;
+}
+.filtros .filtro{
+    margin-top: 20px;
+}
+
+.sala p{
+    margin-top: 0;
+}
+
+#calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #8662e7;
+    color: #fff;
+}
+
+#calendar-controls button{
+    background-color: #9475eb;
+    border: none;
+    color: #e0e0e0;
+    height: 25px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+#calendar-controls button:hover {
+    background-color: #532cb8;
+}
+
+.calendar-body {
+    padding: 10px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    height: 80%;
+    gap: 0px;
+    position: relative;
+    top: 5%;
+}
+
+.calendar-weekdays {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.calendar-weekdays div {
+    width: calc(100% / 7);
+    text-align: center;
+    font-weight: bold;
+    color: #2d363f;
+}
+
+.calendario{
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        height: 240px;
+        overflow: hidden;
+        
+}
+
+#calendar div {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.day {
+    width: calc(100% / 7);
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.day.sunday {
+    background-color: #f0f0f0;
+    font-size: 0.8em;
+    border: #fff solid 3px;
+}
+
+.day.selectable:hover {
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+.day.selected {
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 50px;
+}
+
+#details, #confirmation {
+    margin-top: 20px;
+}
+
+.detalhes{
+    background-color: #ffffff;
+    width: 400px;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    bottom: 300px;
+    left: 30%;
+    border: 2px solid gray;
+}
+
+.detalhes .obs input[type="text"]{
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.detalhes h2{
+    margin-top: 0;
+}
+
+.detalhes div{
+    margin-top: 20px;
+}
+
+.obs label{
+    margin-bottom: 20px;
+}
+.detalhes p, label{
+    font-size: 1.2em;
+}
+
+.sala_data_periodo{
+    padding: 20px;
+    width: 530px;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid black;
+    left: 30%;
+    top: 12vh;
+}
+
+.sala_data_periodo .periodo{
+    position: absolute;
+    top: 50px;
+    right: 25px;
+}
+
+.sala_data_periodo #Concluir_reserva{
+    position: absolute;
+    bottom: 20px;
+    right: 35px;
+    background-color: #7244f1;
+    color: #e0e0e0;
+    border: none;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.disp h5 div{
+    width: 15px;
+    height: 15px;
+    background-color: #38db23;
+}
+.disp h5{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.disp h5 .ind{
+    background-color: #db2323;
+}
+
+.confimacao{
+    background-color: hsl(0, 0%, 100%);
+    width: 400px;
+    padding: 20px;
+    position: relative;
+    bottom: 280px;
+    left: 30%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.confimacao button{
+    position: relative;
+    top: 17px;
+    background-color: #7244f1;
+    color: #e0e0e0;
+    border: none;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.botao_enviar_reservas_confirm{
+    position: absolute;
+    bottom: 20px;
+    right: 35px;
+    gap: 20px;
+}
+
+@media (max-width: 870px) {
+    .sala_data_periodo{
+        width: 370px;
+        left: 37%;
+    }
+    .sala_data_periodo .periodo{
+        position: relative;
+        top: 16px;
+        left: 57%;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+.filtros.active {
+    display: block; /* Mostrar quando ativo */
+}
+
+@media (max-width: 686px) {
+    .sala_data_periodo{
+        width: 370px;
+        left: 10%;
+    }
+
+    .filtros {
+        display: none; /* Ocultar por padrão em telas pequenas */
+        width: 30%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #B28FE9;
+        z-index: 1000;
+        overflow-y: scroll;
+    }
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 62px;
+    }
+}

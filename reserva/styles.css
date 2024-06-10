@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(65% - 40px);
+  margin-bottom: 20px;
+  margin-top: 70px;
+  margin-left: 35px;
+  padding-top: 20px;
+}
+
+.content-right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  max-width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 30px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.titulo {
+  margin-left: 33px;
+  position: relative;
+  top: 5px;
+  margin-top: 25px;
+}
+
+.subtitulo {
+  margin-left: 10px;
+  position: relative;
+  top: 65px;
+}
+
+.button-container .extend-button {
+  width: 100%;
+}
+
+.extend-button {
+  max-width: 800px; /* Defina a largura máxima para os botões */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  overflow: hidden; /* Oculta qualquer conteúdo excedente */
+}
+
+.fa-chalkboard-user {
+  margin-right: 10px; /* Ajuste o valor conforme necessário */
+}
+
+.botoes-personalizados {
+  text-align: right; /* Alinha os botões à direita */
+  margin-top: 30px;
+  margin-right: 25px;
+}
+
+.botao-disciplinas {
+  margin-right: 30px;
+}
+
+.botao-reservas {
+  margin-left: 10px;
+}
+
+.icone {
+  display: inline-block;
+  transform: translateY(35%);
+  transform: translateX(5%);
+  font-size: 40px;
+}
+
+
+.sub-button {
+    float: right; /* Alinha o botão secundário à direita */
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-right: 20px;
+    flex-wrap: wrap; /* Faz com que os elementos sejam envolvidos em uma nova linha */
+
+  }
+
+  .titulo {
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .subtitulo {
+    margin-left: 5vw;
+  }
+
+  .box {
+    width: calc(100% - 40px);
+  }
+
+  .content-right {
+    width: calc( 100% - 40px ); 
+    margin-top: 20px;
+    margin-right: 20px;
+      order: 2; 
+      width: 100%;
+      position: relative; /* Define a posição relativa */
+      top: 30px; /* Ajusta a posição para baixo para colocar abaixo da box */
+      left: 50%; /* Move o content-right para a metade da largura do contêiner */
+      transform: translateX(-50%); /* Centraliza o content-right horizontalmente */
+  }
+  .botoes-personalizados {
+    text-align: center; /* Alinha os botões ao centro em telas menores */
+  }
+
+  .botao-reservas {
+    margin-left: 0; /* Remove a margem à esquerda no botão "Alterar Reservas" */
+    margin-top: 10px; /* Adiciona espaçamento entre os botões em telas menores */
+  }
+}
+
+/* Media Query para telas maiores */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Altera a direção para linha em telas maiores */
+    justify-content: space-between; /* Distribui os elementos igualmente */
+  }
+  .box,
+  .content {
+    margin-bottom: 0; /* Remove a margem inferior entre os elementos em telas maiores */
+  }
+  .box {
+    margin-right: 20px; /* Adiciona margem à direita na caixa */
+  }
+  
+}

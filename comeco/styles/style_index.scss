@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?família=Poppins:wght@300; 400; 500; 600; 700; 800; 900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma-rtl.min.css";
+
+$azul: #6052FD;
+$verde: #3E4462;
+$roxo: #A5A9F0;
+$roxo-leve: #ECF0FB;
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+/* Fundo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: $roxo;
+}
+
+#inicio_principal {
+    width: 90vw;
+    height: 90vh;
+    background: $roxo-leve;
+    border-radius: 30px;
+    padding: 3rem;
+}
+
+
+/* logo */
+#inicio_icone {
+    width: 47px;
+    height: 47px;
+}
+
+#inicio_barra_cima {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    li{
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    /* BookRoom */
+    h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 45px;
+        color: #3E4462;
+    }
+
+    /* Entrar */
+    #inicio_entrar {
+        // margin-left: 35px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        // font-size: 24px;
+        // line-height: 36px;
+        color: #6052FD;
+        padding: 0.010rem;
+
+        border: solid 2px #6052FD;
+        border-radius: 10%;
+    }
+
+    /* Não tem uma conta? */
+    .inicio_barra_cima a {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+
+        color: #6052FD;
+    }
+
+}
+
+#inicio_centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#inicio_elementos {
+    display: flex;
+    flex-wrap: wrap;    
+    align-content: space-evenly;
+    flex-direction: column;
+    height: 80vh;
+    max-width: 100%;
+}
+
+    /* Boas Vindas! */
+    h1 {
+        font-weight: 600;
+        font-size: 3.5rem;
+        line-height: 3.7rem;
+
+        color: #7389FB;
+    }
+
+    /* Gostaria de reservar uma sala? */
+    h2 {
+        width: 400px;
+        height: 25px;
+        
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #3E4462;
+    }
+
+    /* Vamos começar */
+    h3 {
+        margin-top: 60px;        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 47px;
+
+        color: #3E4462;
+    }
+
+    /* Lorem ipsum */
+    h4 {
+        margin-top: 30px;        
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        width: 250px;
+
+        color: #3E4462;
+    }
+
+
+#inicio_container_foto{
+    max-width: 60vw;
+    max-height: 30vh;
+
+    img{
+        max-width: 100%;
+    }
+}
+
+    #inicio_reservar{
+        margin-top: 15%;
+        width: 281px;
+        height: 55px;
+
+        cursor: pointer;
+
+        text-decoration: none;
+        // cursor: pointer;
+
+        background: linear-gradient(90deg, #AA7AF3 0%, #574DFF 100%);
+        border-radius: 30px;
+        border: none;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+}
+
+
+@media screen and (max-width: 765px) {
+    *{
+        padding: 0;
+    }
+
+    #inicio_principal{
+        height: 98vh;
+        width: 98vw;
+        padding: 0.20rem;
+    }
+
+    #inicio_barra_cima{
+        background-color: #FFFFFF;
+        border-radius: 25px;
+
+        ul{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        l1{
+            padding: 1rem;
+            flex-wrap: nowrap;
+        }
+
+        .inicio_icone{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        h1{
+            font-size: 13px;
+            line-height: 1rem;
+        }
+
+        a{
+            padding: 0.15rem;
+        }
+
+        #inicio_entrar{
+            padding: 0.15rem;
+        }
+    }
+
+    #inicio_centro{
+        flex-direction: column;
+    }
+
+    #inicio_elementos{
+
+        text-align: center;
+        align-items: center;
+
+        flex-direction: column;
+        flex-wrap: nowrap;
+        h1{
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+
+        h2{
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+    }
+
+    #inicio_container_foto{
+        display: none;
+    }
+}

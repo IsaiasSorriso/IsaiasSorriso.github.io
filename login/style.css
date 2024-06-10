@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?família=Poppins:wght@300; 400; 500; 600; 700; 800; 900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #ECEDFF;
+}
+
+.fundo_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.caixa_login{
+    margin-left: 17%;
+    width: 34%;
+    background: #7389FB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-right: auto;
+}
+
+ .caixa_login h1{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.icone{
+    margin-left: 50%;
+    margin-bottom: 10%;
+}
+
+
+.caixa_login .caixa_entrada{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 35px 0;
+}
+
+.caixa_entrada input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.caixa_entrada input::placeholder {
+    color: #fff;
+}
+
+.caixa_entrada i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.caixa_login .lembrar_esqueci{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;  
+  margin: -15px 0 15px;
+}
+
+.lembrar_esqueci label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.lembrar_esqueci a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.lembrar_esqueci a:hover{
+    text-decoration: underline;
+}
+
+.caixa_login .btn{
+    width: 100%;
+    height: 3rem;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #2E50FD;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.caixa_login .btn:hover{
+    background-color: #2E50FD;
+    color: #fff;
+    cursor: pointer;
+}
+
+.possui{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5%;
+}
+
+.possui h3{
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+ .link a:hover  {
+    background-color: #2E50FD;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.link a {
+    width: 7.5rem;
+    height: 1.8rem;
+    border-radius: 0.40rem;
+    text-decoration: none;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_direita{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Adiciona isso para alinhar os elementos no centro horizontal */
+    height: 15rem;
+    margin-right: 15%;
+}
+
+.texto_direita h1{
+    color: #7389FB;
+    text-align: center;
+    font-family: Exo 2;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.texto_direita h2{
+    color: #7389FB;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3rem;
+
+}
+
+.texto_direita h3{
+    color: #2E50FD;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width:1000px){
+    .fundo_login{
+        padding-top: 10%;
+        margin-left: 3%;
+        flex-direction: column-reverse;
+        width: 100%;
+
+    }
+
+    .caixa_login{
+        height: auto;
+        width: 60%;
+        
+    }
+
+    .texto_direita{
+        margin-top: 0;
+        padding-left: 7%;
+        margin-bottom: 6%;
+    }
+
+    .texto_direita h1{
+        font-size: 3rem;
+    }
+
+    .texto_direita h2{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width:699px){
+    .caixa_login{
+        height: auto;
+        width: 80%;
+        margin-left: 7%;
+    }
+
+    .texto_direita{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .caixa_login{
+        height: auto;
+        width: 90%;
+        margin-left: 3%;
+    }
+
+    .caixa_login h1{
+        font-size: 2.7rem;
+    }
+
+}
+
+@media only screen and (max-width:376px){
+    
+    .caixa_login h1{
+        font-size: 2rem;
+    }
+
+    .caixa_login .caixa_entrada{
+        width: 100%;
+        height: 30px;
+        margin-bottom: 20%;
+    }
+    
+    .caixa_entrada input{
+        font-size: 13px;
+    }
+
+    .caixa_login .btn{
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .possui{
+        margin-top: 7%;
+        gap: 20px;
+    }
+    
+    .possui h3{
+        font-size: 0.7rem;
+    }
+
+    label {
+        font-size: 0.7rem;
+    }
+
+    a{
+        font-size: 0.7rem; 
+    }
+
+    .link a {
+        width: 5rem;
+        height: 1.2rem;
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login BookRoom</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3777b52af3.js" crossorigin="anonymous"></script>
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <div class="fundo_login">
+
+        <div class="caixa_login">
+            <form id="registroformulario">
+                <h1>Login</h1>
+
+                <div class="icone">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+
+                <hr class="hrEstilizada">
+
+                <div class="caixa_entrada">
+                    <input type="text" placeholder="Login" required>
+                </div>
+                <div class="caixa_entrada">
+                    <input type="password" placeholder="Senha" required>
+                </div>
+
+                <div class="lembrar_esqueci">
+                    <label><input type="checkbox">Lembrar senha</label>
+                    <a href="../redefinir-senha/">Esqueci a senha</a>
+                </div>
+
+                <p id="feedback" style="text-align: center; margin-bottom: 10px;"></p>
+
+                <button type="submit" class="btn"><a href="../painel-administrativo/index.html">Entrar</a></button>
+
+                <div class="possui">
+                    <h3>Não tem uma conta?</h3>
+                    <div class="link">
+                    <a href="../cadastro">Cadastre-se</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="texto_direita">
+            <h1>Que bom te ver<br>aqui novamente!</h1>
+
+            <h2>Reserve suas salas de<br>uma forma fácil!</h2>
+        </div>
+    </div>
+</body>
+
+</html>

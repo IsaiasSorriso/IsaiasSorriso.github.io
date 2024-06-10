@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+header{
+    position: relative;
+    display: flex;
+    left: 100px;
+    top: 20px;
+    align-items: center;
+}
+
+header .BookRoom{
+    position: relative;
+    left: 4px;
+    font-family: 'poppin';
+}
+
+.titulo{
+    position: relative;
+    top: 40px;
+    left: 100px;
+    font-size: 2em;
+}
+
+.informa{
+    position: relative;
+    background-color: #e7e8f7;
+    border: 0.5px solid gainsboro;
+    width: 700px;
+    height: 400px;
+    left: 100px;
+    top: 70px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.informa .dado,
+.informa .Disciplinas
+{
+    /* background-color: aqua; */
+    margin: 15px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 400px;
+}
+
+.informa .dado img{
+    position: relative;
+    left: 30px;
+    cursor: pointer;
+    width: 7%;
+}
+
+.informa .Disciplinas{
+    margin-top: 1px;
+    width: 95%;
+    display: inline-block;
+    height: 60px;
+}
+
+.informa .Disciplinas .dis{
+    display: flex;
+}
+
+.informa .Disciplinas p{
+    font-size: 1.1em;
+}
+
+.informa .Disciplinas .dis p{
+    font-size: 1.4em;
+}
+
+.informa .Disciplinas .materia{
+    margin-right: 10px;
+}
+
+.informa .dado p{
+    font-size: 1.4em;
+}
+
+.informa .Disciplinas{
+    border-bottom: 1px solid black;
+}
+
+.botao{
+    position: relative;
+    left: 500px;
+    top: 10px;
+}
+
+.botao button{
+    height: 50px;
+    width: 90px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #2493FF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.botao button:hover{
+    background-color: #0c78e4
+}
+
+.botao button p{
+    font-size: 17px;
+}
+
+.foto{
+    position: relative;
+    bottom: 290px;
+    left: 585px;
+    background-color: #2493FF;
+    height: 160px;
+    width: 160px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.foto img{
+    border-radius: 20px;
+}
+
+.perfil{
+    /* background-color: #2493FF; */
+    position: absolute;
+    right: 150px;
+}
+
+.perfil .fotoperfil{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.perfil .fotoperfil img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.perfil .nomeprof{
+    display: flex;
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+
+.perfil .nomeprof .prof{
+    margin-right: 4px;
+}
+
+.option{
+    /* background-color: #2493FF; */
+    height: 170px;
+    border-left:1px solid  rgb(65, 64, 64);
+    width: 200px;
+    position: absolute;
+    right: 95px;
+    top: 35%;
+}
+
+.link{
+    border-bottom:1px solid  rgb(65, 64, 64);
+}
+
+.option li{
+    list-style: none;
+    padding: 10px;
+}
+
+.option a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.option a:hover{
+    border-bottom: 1px solid rgb(95, 85, 85);
+}

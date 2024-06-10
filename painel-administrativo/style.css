@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.perfil_professores{
+    padding: 5%;
+}
+
+.cabecalho .logo{
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    gap: 10px;
+    color: #3E4462;
+    margin-right: 200px;
+    
+}
+
+.lado{
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: end;
+    margin-bottom: 5%;
+}
+
+ main{
+    display: flex;
+    justify-content: center;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.caixa{
+    height: 40vh;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: #CFDCFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.caixa a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 5%;
+    height: 15%;
+    width: 80%;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    color: #000000; 
+}
+.caixa #link{
+    border-bottom: #000000 1px solid;
+}
+.caixa i{
+    text-align: end;
+}
+
+@media only screen and (max-width:800px){
+    .topo{
+        margin-bottom: 7%;
+    }
+    
+    .caixa{
+        height: 50vh;
+        width: 60vw;
+    }
+
+}
+
+@media only screen and (max-width:520px){
+    
+}
+
+

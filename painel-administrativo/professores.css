@@ -1,0 +1,196 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    position: relative;
+    display: flex;
+    top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .logo{
+    position: relative;
+    width: 170px;
+    font-family: 'poppin';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 10%;
+}
+
+header .adm{
+    position: relative;
+    width: 170px;
+    right: 2%;
+}
+
+.titulo{
+    position: relative;
+    top: 60px;
+    left: 10%;
+    width: 30%;
+}
+
+.informa{
+    position: relative;
+    background-color: #fcfcff;
+    border: 0.5px solid gainsboro;
+    width: 50%;
+    height: 230px;
+    left: 100px;
+    top: 70px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.informa .dado_info{
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.informa .dado
+{
+    /* background-color: aqua; */
+    margin: 15px;
+    height: 37px;
+    display: flex;
+    padding: 5px;
+    width: 400px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.informa .dados1, .dados2, .dados3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.informa .dado img{
+    position: relative;
+    left: 30px;
+    cursor: pointer;
+    width: 7%;
+}
+
+
+.informa .dado p{
+    font-size: 1.2em;
+}
+
+.informa .Observacao{
+    position: relative;
+    top: 0%;
+    padding: 20px;
+}
+
+.informa .Observacao .obs{
+    width: 70%;
+    border: 1px solid black;
+    height: 16vh;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-y: scroll;
+}
+
+.option{
+    /* background-color: #2493FF; */
+    height: 170px;
+    border-left:1px solid  rgb(65, 64, 64);
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    top: 21%;
+}
+
+.option li{
+    list-style: none;
+    padding: 10px;
+}
+
+.option a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+.option #reserva{
+    border-bottom: 1px solid rgb(95, 85, 85);
+}
+
+.option a:hover{
+    border-bottom: 1px solid rgb(95, 85, 85);
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+.option.active {
+    display: block; /* Mostrar quando ativo */
+}
+
+.informa .botao_Aceitar button{
+    height: 40px;
+    width: 100px;
+    position: relative;
+    bottom: 60px;
+    left: 74%;
+    border-radius: 10px;
+    border: none;
+    background-color: #2493FF;
+    color: #fff;
+    font-size: 1em;
+}
+
+#pedido{
+    border-bottom: #333 solid 1px;
+}
+
+@media (max-width: 750px) {
+    .option {
+        display: none; /* Ocultar por padrão em telas pequenas */
+        width: 30%;
+        height: auto;
+        position: fixed;
+        top: 23%;
+        right: 0;
+        background-color: #ffffff;
+        z-index: 1000;
+        border-bottom-left-radius: 10px;
+    }
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        width: 170px;
+        right: 0;
+        top: 80px;
+    }
+    .informa{
+        width: 70%;
+        left: 10%;
+    }
+    .titulo{
+        left: 10%;
+        width: 300px;
+    }
+}
