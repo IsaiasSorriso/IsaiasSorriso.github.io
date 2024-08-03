@@ -310,6 +310,9 @@ footer {
   .hero h2{
     margin-top: 3rem;
   }
+  .line{
+    margin-top: 10dvh
+  }
 }
 
 /* BUTTONS */
