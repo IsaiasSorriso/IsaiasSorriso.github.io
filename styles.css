@@ -291,9 +291,6 @@ footer {
     width: 150%;
     right: 28%;
   }
-  .card-timeline{
-    width: 50px;
-  }
   .hero h1, .hero h2{
     font-size: 4rem;
   }
@@ -303,12 +300,12 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .timeline-item.left{
+  /* .timeline-item.left{
     margin-left: 145%;
   }
   .timeline-item.right{
     margin-right: 145%;
-  }
+  } */
   .timeline-item::before{
     display: none;
   }
@@ -642,8 +639,8 @@ ul {
 }
 
 .timeline-item.left {
-  justify-content: flex-end;
-  left: -130px;
+  /* justify-content: flex-end;
+  left: 0px; */
 }
 
 .timeline-item.left::before {
@@ -651,8 +648,8 @@ ul {
 }
 
 .timeline-item.right {
-  justify-content: flex-start;
-  left: 60px;
+  /* justify-content: flex-start;
+  left: 0px; */
 }
 
 .timeline-item.right::before {
