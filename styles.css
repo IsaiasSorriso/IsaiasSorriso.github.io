@@ -320,6 +320,7 @@ footer {
   }
   .line{
     display: none;
+    margin-top: 26dvh;
   }
 }
 
