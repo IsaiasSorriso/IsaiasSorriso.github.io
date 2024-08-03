@@ -291,9 +291,9 @@ footer {
     width: 150%;
     right: 28%;
   }
-  /* .card-timeline{
+  .card-timeline{
     width: 100px;
-  } */
+  }
   .hero h1, .hero h2{
     font-size: 4rem;
   }
@@ -666,7 +666,7 @@ ul {
   color: #666;
 }
 
-/* this card is inspired form this - https://georgefrancis.dev/ */
+
 .timeline-section {
   display: flex;
   justify-content: center;
