@@ -17,8 +17,15 @@ botaoEnviar.addEventListener('click', function() {
 });
 
 function handleResize() {
+  const isMobile = window.innerWidth < 720;
   const timelineItems = document.querySelectorAll('.timeline-item');
-  const isMobile = window.innerWidth < 480;
+  const linha2 = document.querySelectorAll('.line2');
+
+  linha2.forEach(linha =>{
+    if (isMobile) {
+      linha.style.display = 'block';
+    }
+  })
 
   timelineItems.forEach(item => {
       if (isMobile) {
