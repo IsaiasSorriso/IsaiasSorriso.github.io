@@ -15,23 +15,26 @@ const botaoEnviar = document.getElementById('botaoEnviar');
 botaoEnviar.addEventListener('click', function() {
   location
 });
-// botaoEnviar.addEventListener('click', function() {
-//     if ( nome && mail && message ) {
-//     Email.send({
-//         Host: "smtp.elasticemail.com",
-//         Username: "isaiasbelarmina123@gmail.com",
-//         Password: "BB1C1DAD5F2350E52C4A4FDD818DF920DBD3",
-//         To: "teste@gmail.com",
-//         From: "isaiasbelarmina123@gmail.com",
-//         Subject: `Enviando E-mail Com Javascript`,
-//         Body: `Email: ${mail} \n \n ${message}`,
-//       }).then(() => {
-//       alert('Enviado');
-//       location.reload();
-//       });
-// } else {
-//     alert('Preencha todos os campos');
-// }
-// });
+
+function handleResize() {
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  const isMobile = window.innerWidth < 480;
+
+  timelineItems.forEach(item => {
+      if (isMobile) {
+          item.classList.remove('left', 'right');
+      } else {
+          item.classList.add('left');
+          if (item.classList.contains('right')) {
+              item.classList.remove('left');
+          }
+      }
+  });
+}
+
+window.addEventListener('resize', handleResize);
+window.addEventListener('DOMContentLoaded', handleResize);
+
+
 
 
