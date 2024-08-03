@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #212121;
   color: #333;
   overflow-x: hidden;
 }
@@ -305,7 +305,7 @@ footer {
     width: 50px;
   }
   .hero h1, .hero h2{
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
