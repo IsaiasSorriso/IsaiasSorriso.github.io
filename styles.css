@@ -304,7 +304,7 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .card-timeline{
     width: 50px;
     height: 20dvh;
