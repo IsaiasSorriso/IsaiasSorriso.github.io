@@ -312,6 +312,9 @@ footer {
   .timeline-section{
     flex-direction: column;
   }
+  .hero h1, .hero h2{
+    font-size: 2rem;
+  }
 }
 
 /* @media (max-width: 500px) {
