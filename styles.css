@@ -297,11 +297,8 @@ footer {
   .hero h1, .hero h2{
     font-size: 4rem;
   }
- 
-   .line, .line .rua, .line img{
-    position: absolute;
-    width: 0;
-    height: 0;
+  .line{
+    opacity: 0;
   }
 }
 
@@ -314,6 +311,9 @@ footer {
   }
   .timeline-item::before{
     display: none;
+  }
+  .timeline-section{
+    flex-direction: column;
   }
 }
 
@@ -691,6 +691,12 @@ ul {
 .timeline h2 {
   margin-bottom: 10px;
   font-size: 1.2em;
+  color: #333;
+}
+
+.timeline h1 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
   color: #333;
 }
 
