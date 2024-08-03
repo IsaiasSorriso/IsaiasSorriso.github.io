@@ -304,8 +304,31 @@ footer {
     height: 0;
   }
 }
+@media (max-width: 768px) {
+  .line img {
+      left: 10%;
+      transform: translateX(0);
+  }
+  .timeline-item {
+      max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .line img {
+      left: 5%;
+  }
+  .card__title {
+      font-size: 1em;
+  }
+  .card__content {
+      font-size: 0.9em;
+  }
+  .card__date {
+      font-size: 0.8em;
+  }
+}
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .card-timeline{
     width: 50px;
     height: 20dvh;
@@ -329,7 +352,7 @@ footer {
   .timeline h2 {
     font-size: 0.9em;
   }
-}
+} */
 
 /* BUTTONS */
 
