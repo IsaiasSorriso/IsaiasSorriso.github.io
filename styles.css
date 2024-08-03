@@ -315,16 +315,14 @@ footer {
   .hero h2{
     margin-top: 3rem;
   }
-  .line{
-    display: none;
-  }
-  .line img{
-    width: 50px;
-  }
   .card-timeline .card__content{
     font-size: 0.40rem; 
   }
-
+  .line, .line .rua, .line img{
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
 }
 
 /* BUTTONS */
