@@ -317,6 +317,9 @@ footer {
   .line img{
     width: 50px;
   }
+  .timeline-section{
+    width: 80%;
+  }
 }
 
 /* BUTTONS */
