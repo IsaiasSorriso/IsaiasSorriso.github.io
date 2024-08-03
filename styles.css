@@ -297,6 +297,12 @@ footer {
   .hero h1, .hero h2{
     font-size: 4rem;
   }
+  .timeline p{
+    font-size: 0.2em;
+  }
+  .timeline h2 {
+    font-size: 0.9em;
+  }
    .line, .line .rua, .line img{
     position: absolute;
     width: 0;
