@@ -311,7 +311,11 @@ footer {
     margin-top: 3rem;
   }
   .line{
-    margin-top: 10dvh
+    margin-top: 10dvh;
+    width: 20px;
+  }
+  .line img{
+    width: 50px;
   }
 }
 
