@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-  background-color: #ffffff;
+  background-color: #212121;
   color: #fff;
   padding: 1rem 0;
 }
@@ -291,13 +291,22 @@ footer {
     width: 150%;
     right: 28%;
   }
-  .card-timeline{
-    width: 150px;
-  }
+  /* .card-timeline{
+    width: 100px;
+  } */
   .hero h1, .hero h2{
     font-size: 4rem;
   }
   
+}
+
+@media (max-width: 450px) {
+  .card-timeline{
+    width: 50px;
+  }
+  .hero h1, .hero h2{
+    font-size: 1rem;
+  }
 }
 
 /* BUTTONS */
