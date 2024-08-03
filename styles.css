@@ -318,10 +318,8 @@ footer {
   .card-timeline .card__content{
     font-size: 0.40rem; 
   }
-  .line, .line .rua, .line img{
-    position: absolute;
-    width: 0;
-    height: 0;
+  .line{
+    display: none;
   }
 }
 
