@@ -292,17 +292,22 @@ footer {
     right: 28%;
   }
   .card-timeline{
-    width: 100px;
+    width: 50px;
   }
   .hero h1, .hero h2{
     font-size: 4rem;
   }
-  
+   .line, .line .rua, .line img{
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
 }
 
 @media (max-width: 450px) {
   .card-timeline{
     width: 50px;
+    height: 20dvh;
   }
   .hero h1, .hero h2{
     font-size: 2.5rem;
@@ -311,12 +316,15 @@ footer {
     margin-top: 3rem;
   }
   .line{
-    margin-top: 26dvh;
-    width: 10px;
+    display: none;
   }
   .line img{
     width: 50px;
   }
+  .card-timeline .card__content{
+    font-size: 0.40rem; 
+  }
+
 }
 
 /* BUTTONS */
@@ -718,7 +726,7 @@ ul {
   --border-radius: 0.75rem;
   --primary-color: #7257fa;
   --secondary-color: #3c3852;
-  width: 210px;
+  width: 200px;
   font-family: "Arial";
   padding: 1rem;
   border-radius: var(--border-radius);
