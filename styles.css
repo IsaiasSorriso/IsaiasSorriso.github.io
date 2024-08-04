@@ -329,11 +329,11 @@ footer {
   }
 
   .line2 {
-    transform: translateY(5dvh);
-    right: 30%;
+    /* transform: translateY(5dvh); */
+    right: 50px;
     position: absolute;
     width: 21px;
-    height: 190dvh;
+    height: 193dvh;
     background-color: #3f3939;
     border-radius: 20px;
   }
