@@ -143,7 +143,7 @@ nav h1 {
 /* Highlighted Projects Section */
 .highlighted-projects {
   background-color: #212121;
-  color: #333;
+  color: #a7a7a7;
   padding-left: 2rem 0;
 }
 
@@ -352,6 +352,9 @@ footer {
     margin-top: 20px;
     background-color: rgb(255, 225, 52);
     left: 10px;
+  }
+  .Btn-hero{
+    transform: translateX(-15px);
   }
 }
 
@@ -750,6 +753,10 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: #212121;
+}
+
+.timeline-section h1{
+  color: #a7a7a7;
 }
 
 .line {
