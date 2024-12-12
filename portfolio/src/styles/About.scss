@@ -1,0 +1,97 @@
+.container {
+  h1 {
+    margin: 40px;
+  }
+
+  .About {
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    .appUsados {
+      width: 45%;
+      height: auto;
+      margin: 20px;
+      position: relative;
+      bottom: 20dvh;
+
+      h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .tecnologias {
+        display: grid;
+        grid-template-columns: repeat(
+          3,
+          1fr
+        ); // Define 3 colunas com tamanho igual
+        gap: 20px; // Espaçamento entre os itens
+        padding: 20px;
+
+        .qual {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 10px;
+          border: 1px solid #6d6d6d;
+          border-radius: 8px;
+          background-color: #2c2c2c;
+
+          img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+          }
+
+          p {
+            margin: 0;
+            font-size: 1rem;
+            color: #f3f3f3;
+          }
+        }
+      }
+    }
+
+    .sobre {
+      width: 50%;
+      
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .container{
+    .About{
+      display: block;
+      justify-content: center;
+
+      .sobre{
+        width: 100%;
+      }
+
+      .appUsados{
+        width: 100%;
+        bottom: 0dvh;
+        margin: 0px;
+
+        .tecnologias{
+          padding: 0px;
+          .qual{
+            img{
+              width: 20px;
+              height: 20px;
+            }
+            p{
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}

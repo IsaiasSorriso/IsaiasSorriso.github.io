@@ -1,0 +1,135 @@
+.container-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(49, 49, 49);
+  height: 10dvh;
+  z-index: 2222;
+  transition: width 0.5s ease-in-out;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10dvh;
+
+    select {
+      /* Estilo geral do select */
+      background-color: #272727; /* Cor de fundo */
+      border: 2px solid #464444; /* Borda do select */
+      border-radius: 8px; /* Arredondamento das bordas */
+      font-size: 16px; /* Tamanho da fonte */
+      padding: 10px 15px; /* Espaçamento interno */
+      width: 200px; /* Largura do select */
+      cursor: pointer; /* Cursor de ponteiro quando passar sobre o select */
+      transition: all 0.3s ease; /* Transição suave para mudanças */
+
+      /* Estilo ao passar o mouse */
+      &:hover {
+        border-color: #888; /* Cor da borda ao passar o mouse */
+      }
+
+      /* Estilo quando o select estiver em foco */
+      &:focus {
+        border-color: #0056b3; /* Cor da borda quando em foco */
+        outline: none; /* Remove o contorno padrão */
+      }
+
+      /* Estilo do texto da opção */
+      option {
+        background-color: #3f3f3f; /* Cor de fundo das opções */
+        color: #e7e7e7; /* Cor do texto */
+        padding: 10px; /* Espaçamento das opções */
+      }
+
+      /* Estilo ao passar o mouse sobre uma opção */
+      option:hover {
+        background-color: #707070; /* Cor de fundo ao passar o mouse */
+      }
+    }
+
+    .button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: transparent;
+      --stroke-color: #ffffff7c;
+      --ani-color: rgba(95, 3, 244, 0);
+      --color-gar: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+      letter-spacing: 3px;
+      font-size: 2em;
+      font-family: "Arial";
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 1px var(--stroke-color);
+      cursor: pointer;
+      // top: 2.5dvh;
+
+      .front-text {
+        position: absolute;
+        top: 19px;
+        left: 35px;
+        width: 0%;
+        background: var(--color-gar);
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: 100%;
+        overflow: hidden;
+        transition: all 1s;
+        animation: 8s ani infinite;
+        border-bottom: 2px solid transparent;
+      }
+    }
+    .button:hover .front-text {
+      width: 100%;
+      border-bottom: 2px solid #03a9f4;
+      -webkit-text-stroke: 1px var(--ani-color);
+    }
+
+    .acoes {
+      display: flex;
+      justify-content: space-between;
+      width: 20%;
+      gap: 20px;
+    }
+  }
+  .menu {
+    opacity: 0;
+  }
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+
+    50% {
+      background-position: 400%;
+    }
+
+    100% {
+      background-position: 0%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .container-header {
+    width: 100%;
+    header{
+      width: 100%;
+      position: relative;
+
+      select{
+        position: relative;
+        width: 100px;
+        right:  80%;
+        font-size: 10px;    
+      }
+      .button{
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+  }
+}
